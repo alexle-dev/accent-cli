@@ -19,7 +19,11 @@ export default class HookRunner {
 
   public async run(name: Hooks) {
     if (!this.hooks) return null
-    const hooks = this.hooks[name]
+    let hooks = this.hooks[name]
+
+    if (typeof hooks === 'string') {
+      hooks = [hooks]
+    }
 
     if (hooks) {
       new Formatter().log(name, hooks)

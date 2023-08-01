@@ -10,7 +10,6 @@
     "outDir": "./lib",
     "pretty": true,
     "noFallthroughCasesInSwitch": true,
-    "noEmit": true,
     "noImplicitReturns": true,
     "noUnusedLocals": true,
     "rootDirs": [
